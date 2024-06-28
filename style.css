@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('./fonts/GothamBlack.eot'),
+        url('./fonts/GothamBlack.woff2') format('woff2'),
+        url('./fonts/GothamBlack.woff') format('woff'),
+        url('./fonts/GothamBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gotham';
+}
+
+body {
+    font-family: 'Gotham';
+}
+
+.custom-nav {
+    background: rgb(255, 0, 0);
+    background: linear-gradient(120deg, rgba(255, 0, 0, 0.5) 0%, rgba(255, 184, 0, 0.35066526610644255) 90%);
+}
+
+.custom-nav a,
+.custom-nav button {
+    font-family: "Aclonica", sans-serif;
+    white-space: nowrap;
+}
+
+.nav-item a:hover {
+    color: blue;
+}
+
+.custom-navabr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-logo {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    justify-content: space-between;
+    /* width: max-content; */
+}
+.custom-logo-name-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* justify-content: space-between; */
+    width: max-content;
+}
+.lang-selector{
+    width: max-content;
+    padding: 0px 10px;
+}
+.lang-selector select{
+    /* width: 20px; */
+    padding:2px 30px 2px 2px;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    gap: 2px;
+    margin-left: auto;
+}
+.navbar-nav li {
+    padding:2px;
+}
+.offcanvas.show:not(.hiding),.offcanvas.show{
+    background: rgb(255, 0, 0);
+    background: linear-gradient(120deg, rgba(255, 0, 0, 0.5) 0%, rgba(255, 184, 0, 0.35066526610644255) 90%);
+}
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+    transform: none;
+    background: linear-gradient(120deg, rgba(255, 0, 0, 0.5) 0%, rgba(255, 184, 0, 0.35066526610644255) 90%);
+}
+
+
+
+.main-img{
+    width: 20%;
+}
+.img-box{
+    position: absolute;
+}
+.left-img-box{
+    right: 0px;
+}
+.right-img-box{
+    left: 0px;
+}
+
+
+.banner{
+    max-width: 767px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.card-body{
+    padding: 0px 5px;
+    font-size: 10px;
+}
+
+
+.custom-heading-text{
+    white-space: nowrap;
+}
+.temple-slide-box{
+    border-radius: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.owl-carousel{
+    padding: 10px 30px; 
+}
+.owl-next{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    font-size: 40px ;
+    width: 20px;
+}
+.owl-next span{
+    display: block;
+    /* content: '\f104'; */
+    font: 20px;
+    position: absolute;
+    top: -20px;
+    /* background-color: blue; */
+    font-size: 40px;
+}
+.owl-prev span{
+    display: block;
+    /* content: '\f104'; */
+    font: 20px;
+    left: 5px;
+    position: absolute;
+    top: -20px;
+    /* background-color: blue; */
+    font-size: 40px;
+}
+.owl-prev{
+    position: absolute;
+    top: 50%;
+    /* left: -2px; */
+    left: 0px;
+    /* right: 0px; */
+    font-size: 40px ;
+    width: 20px;
+}
+
+
+
+.custom-pooja-card{
+    padding: 10px;
+    border-radius: 30px;
+    margin: 5px;
+}
+.custom-pooja-card-body{
+    padding: 10px;
+    border-radius: 30px;
+}
+.custom-card-text{
+    font-size: 20px;
+    color: rgb(255, 46, 0);
+}
+.custom-pooja-btn{
+    color: white;
+    border-radius: 20px ;
+    width: 60%;
+    background: linear-gradient(120deg, rgba(255, 0, 0) 0%, rgba(255, 184, 0) 90%);
+}
+.whatsapp-btn{
+    border-radius: 20px ;
+    color: white;
+    background-color: green;
+}
+.card-btn{
+    color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+    .custom-heading p {
+        font-size: 13px;
+    }
+}

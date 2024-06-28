@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prayroz | Book your Pooja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl coursol  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- body content start  -->
+    <!-- nav bar start  -->
+    <nav class=" navbar navbar-expand-lg bg-light custom-nav">
+        <div class=" container ">
+            <div class="d-block d-md-flex align-items-center justify-content-between w-100 ">
+                <div class="custom-logo">
+                    <div class="custom-logo-name-img col-6">
+                        <a class="navbar-brand m-0" href="#">
+                            <img src="./images/logo.png" alt="" width="44px" height="48px">
+                        </a>
+                        <a class="navbar-brand display-4 custom-logo-name" href="#">Prayroz</a>
+                    </div>
+                    <div class=" d-md-none d-flex justify-content-end align-items-center px-2 col-6">
+                        <div class="lang-selector">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>en</option>
+                                <option value="1">hi</option>
+                            </select>
+                        </div>
+
+                        <i class="fas fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight"
+                            style="color: #ffffff; font-size: 30px; font-weight: 600;"></i>
+                    </div>
+                </div>
+                <div class=" d-md-flex d-none col-10" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pooja Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Online pooja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                        </li>
+                        <div class="d-flex text-nowrap">
+                            <button type="button" class="btn btn-outline-warning mx-2 custom-nav-btn"
+                                data-bs-toggle="modal" href="#loginmodal">Login</button>
+                            <button type="button" class="btn btn-warning custom-nav-btn" data-bs-toggle="modal"
+                                href="#signupmodal">Sign-up</button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- mobile view navbar  -->
+    <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-body">
+            <div class="d-flex flex-column position-relative w-100 text-light">
+                <button type="button" class="btn-close position-absolute me-0" style="right: 5px;
+    top: 10px;" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <ul class="navbar-nav d-flex flex-column align-items-start m-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pooja Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Online pooja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                    <div class="d-flex text-nowrap text-light">
+                        <button type="button" class="btn btn-outline-warning me-2 custom-nav-btn" data-bs-toggle="modal"
+                            href="#loginmodal">Login</button>
+                        <button type="button" class="btn btn-warning custom-nav-btn" data-bs-toggle="modal"
+                            href="#signupmodal">Sign-up</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- mobile view navbar end  -->
+    <!-- nav bar end  -->
+
+
+    <!-- first display page start  -->
+    <div class="containe p-5">
+        <div class="row">
+            <div class="col-3 col-md-4 position-relative">
+                <div class="img-box left-img-box"> <span class="left-img main-img"> <img src="./images/image 137.png"
+                            alt="Loading..."></span></div>
+            </div>
+            <div class="col-6 col-md-4 text-center custom-heading">
+                <div class="custom-heading-text">
+                    <h2><span style="color: black;">Pray</span> <span style="color:rgba(255, 61, 0, 0.73)">Roz</span>
+                    </h2>
+                </div>
+                <div>
+                    <p>One solution for all your religious needs</p>
+                </div>
+            </div>
+            <div class="col-3 col-md-4 position-relative">
+                <div class="img-box right-img-box"> <span class="right-img main-img mr-0"> <img style="rotate: 180deg;"
+                            src="./images/image 137.png" alt="Loading..."></span></div>
+            </div>
+        </div>
+    </div>
+    <!-- first display page end  -->
+
+    <!-- banner start  -->
+    <div class="rr px-3 my-3">
+        <div class="banner p-3">
+            <div class="banner-heading">Explore <span>PrayRoz</span></div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="./images/image 107.png">
+                        <div class="card-body">
+                            <a class="card-text">offline and Online Pooja</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="./images/image 107.png">
+                        <div class="card-body">
+                            <a class="card-text">Pooja item home delivery</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="./images/image 107.png">
+                        <div class="card-body">
+                            <a class="card-text">Complete Travel Guide</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- banner end  -->
+
+
+    <!-- temple sliding start  -->
+    <div class="px-3">
+        <div class="temple-slide-box">
+            <div class="col-12 owl-carousel left-to-right">
+                <div class="temple-img-slide-box p-3"> <img src="./images/image 112.png" alt=""></div>
+                <div class="temple-img-slide-box p-3"> <img src="./images/image 112.png" alt=""></div>
+                <div class="temple-img-slide-box p-3"> <img src="./images/image 112.png" alt=""></div>
+                <div class="temple-img-slide-box p-3"> <img src="./images/image 112.png" alt=""></div>
+                <div class="temple-img-slide-box p-3"> <img src="./images/image 112.png" alt=""></div>
+                <div class="temple-img-slide-box p-3"> <img src="./images/image 112.png" alt=""></div>
+                <div class="temple-img-slide-box p-3"> <img src="./images/image 112.png" alt=""></div>
+                <div class="temple-img-slide-box p-3"> <img src="./images/image 112.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- temple sliding end  -->
+
+
+    <!-- pooja cards start  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 owl-carousel temple-left-to-right" id="temple-card-carousel">
+                <div class="card custom-pooja-card">
+                    <img src="./images/image 121.png" class="card-img-top" alt="...">
+                    <div class="card-body custom-pooja-card-body">
+                        <h5 class="card-title">Mahakavch hawan & Ashtakam path</h5>
+                        <div class="card-text custom-card-text">
+                            <div class="temple-details">
+                                <span class="temple-icon"> <i class="fa-solid fa-gopuram"
+                                        style="color: #ff2e00;"></i></span>
+                                <p class="temple-name d-inline"> Temple Name</p>
+                            </div>
+                            <div class="date-details">
+                                <span class="calender-icon"> <i class="fa-regular fa-calendar-days"
+                                        style="color: #ff2e00;"></i></span>
+                                <p class="temple-date d-inline"> 27/06/2024 <span>Astami</span></p>
+                            </div>
+                        </div>
+                        <div class="card-btn">
+                            <a href="#" class="btn custom-pooja-btn">Book Pooja</a>
+                            <a href="#" class="btn whatsapp-btn"><span><i class="fa-brands fa-whatsapp"
+                                        style="color: #07f22f;"></i></span> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card custom-pooja-card">
+                    <img src="./images/image 121.png" class="card-img-top" alt="...">
+                    <div class="card-body custom-pooja-card-body">
+                        <h5 class="card-title">Mahakavch hawan & Ashtakam path</h5>
+                        <div class="card-text custom-card-text">
+                            <div class="temple-details">
+                                <span class="temple-icon"> <i class="fa-solid fa-gopuram"
+                                        style="color: #ff2e00;"></i></span>
+                                <p class="temple-name d-inline"> Temple Name</p>
+                            </div>
+                            <div class="date-details">
+                                <span class="calender-icon"> <i class="fa-regular fa-calendar-days"
+                                        style="color: #ff2e00;"></i></span>
+                                <p class="temple-date d-inline"> 27/06/2024 <span>Astami</span></p>
+                            </div>
+                        </div>
+                        <div class="card-btn">
+                            <a href="#" class="btn custom-pooja-btn">Book Pooja</a>
+                            <a href="#" class="btn whatsapp-btn"><span><i class="fa-brands fa-whatsapp"
+                                        style="color: #07f22f;"></i></span> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card custom-pooja-card">
+                    <img src="./images/image 121.png" class="card-img-top" alt="...">
+                    <div class="card-body custom-pooja-card-body">
+                        <h5 class="card-title">Mahakavch hawan & Ashtakam path</h5>
+                        <div class="card-text custom-card-text">
+                            <div class="temple-details">
+                                <span class="temple-icon"> <i class="fa-solid fa-gopuram"
+                                        style="color: #ff2e00;"></i></span>
+                                <p class="temple-name d-inline"> Temple Name</p>
+                            </div>
+                            <div class="date-details">
+                                <span class="calender-icon"> <i class="fa-regular fa-calendar-days"
+                                        style="color: #ff2e00;"></i></span>
+                                <p class="temple-date d-inline"> 27/06/2024 <span>Astami</span></p>
+                            </div>
+                        </div>
+                        <div class="card-btn">
+                            <a href="#" class="btn custom-pooja-btn">Book Pooja</a>
+                            <a href="#" class="btn whatsapp-btn"><span><i class="fa-brands fa-whatsapp"
+                                        style="color: #07f22f;"></i></span> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card custom-pooja-card">
+                    <img src="./images/image 121.png" class="card-img-top" alt="...">
+                    <div class="card-body custom-pooja-card-body">
+                        <h5 class="card-title">Mahakavch hawan & Ashtakam path</h5>
+                        <div class="card-text custom-card-text">
+                            <div class="temple-details">
+                                <span class="temple-icon"> <i class="fa-solid fa-gopuram"
+                                        style="color: #ff2e00;"></i></span>
+                                <p class="temple-name d-inline"> Temple Name</p>
+                            </div>
+                            <div class="date-details">
+                                <span class="calender-icon"> <i class="fa-regular fa-calendar-days"
+                                        style="color: #ff2e00;"></i></span>
+                                <p class="temple-date d-inline"> 27/06/2024 <span>Astami</span></p>
+                            </div>
+                        </div>
+                        <div class="card-btn">
+                            <a href="#" class="btn custom-pooja-btn">Book Pooja</a>
+                            <a href="#" class="btn whatsapp-btn"><span><i class="fa-brands fa-whatsapp"
+                                        style="color: #07f22f;"></i></span> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pooja cards end  -->
+
+
+    <!-- body content end  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <!-- owl courosl  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
