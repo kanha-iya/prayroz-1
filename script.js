@@ -34,7 +34,7 @@ $(document).ready(function () {
     owlLeftToRight.owlCarousel({
         items: 4,
         loop: true,
-        autoplay: true,
+        autoplay: false,
         slideTransition: 'linear', // Change to 'ease' or 'ease-in-out' if needed
         autoplayTimeout: 2000,
         autoplaySpeed:5000,
@@ -43,13 +43,13 @@ $(document).ready(function () {
         dots:false,
         responsive: {
           0: {
-            items: 2   
+            items: 1   
           },
           600: {
-            items: 3
+            items: 2
           },
           992: {
-            items: 4
+            items: 3
           },
           1200: {
             items: 4

@@ -87,6 +87,10 @@ body {
 
 
 
+.custom-front-container{
+    padding: 40px 0px;
+}
+
 .main-img{
     width: 20%;
 }
@@ -100,6 +104,9 @@ body {
     left: 0px;
 }
 
+.custom-carousel-inner{
+    border-radius: 20px;
+}
 
 .banner{
     max-width: 767px;
@@ -165,10 +172,13 @@ body {
 
 .custom-pooja-card{
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 40px;
     margin: 5px;
 }
 .custom-pooja-card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 10px;
     border-radius: 30px;
 }
@@ -182,18 +192,34 @@ body {
     width: 60%;
     background: linear-gradient(120deg, rgba(255, 0, 0) 0%, rgba(255, 184, 0) 90%);
 }
+.custom-btn{
+    padding: 6px 12px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+}
 .whatsapp-btn{
+    width: 40%;
     border-radius: 20px ;
+    white-space: nowrap;
     color: white;
     background-color: green;
+}
+.whatsapp-btn:hover{
+    background-color: white;
+    color: green;
 }
 .card-btn{
     color: white;
     display: flex;
-    gap: 10px;
+    gap: 5px;
+    white-space: nowrap;
     justify-content: space-between;
 }
-
+.pooja-card-slide-box{
+    border-radius: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
 
 
 
