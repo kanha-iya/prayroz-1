@@ -250,7 +250,25 @@ body {
     background-color:rgba(255, 210, 181, 1);
     padding: 10px 20px;
 }
+.custom-pooja-store-card{
+    padding: 5px 0px;
+    /* padding-right: 5px; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: orange;
+    border-right: 5px solid orange;
+    color: black;
 
+}
+.category-col{
+    background-color: rgba(255, 92, 0, 0.15);
+    padding: 40px 10px;
+    text-align: center;
+}
+.nav-pills .nav-link {
+    background-color: white;
+}
 
 
 @media screen and (max-width:767px) {
@@ -258,7 +276,30 @@ body {
         font-size: 13px;
     }
     .pooja-store-btn{
-        font-size: 13px ;
+        font-size: 12px ;
         white-space: nowrap;
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        background-color: transparent;
+        border-right: 5px solid orange;
+        color: black;
+    
+    }
+    .category-col{
+        background-color: rgba(255, 92, 0, 0.15);
+        padding: 40px 10px;
+        text-align: center;
+    }
+    .nav-pills .nav-link {
+        background-color: transparent;
+    }
+}
+@media screen and (max-width:330px) {
+    .custom-pooja-store-card{
+        padding: 5px 0px;
+        /* padding-right: 5px; */
+    }
+    .store-card-col{
+        padding:0px 2px;
     }
 }
